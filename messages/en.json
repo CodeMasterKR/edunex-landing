@@ -1,0 +1,223 @@
+{
+  "nav": {
+    "features": "Features",
+    "screenshots": "Platform",
+    "pricing": "Pricing",
+    "testimonials": "Reviews",
+    "faq": "FAQ",
+    "demo": "Request demo"
+  },
+  "hero": {
+    "modal_title": "Video guide",
+    "modal_coming_soon": "Coming soon...",
+    "modal_desc": "The video guide is being prepared. Coming very soon!",
+    "badge": "For learning centers",
+    "headline": "Manage your learning center systematically",
+    "subheadline": "EduNex — a modern solution to manage students, payments, attendance, and teachers in one platform. Save time, grow your revenue.",
+    "cta_primary": "Get started free",
+    "cta_secondary": "Watch demo",
+    "stats": {
+      "centers": "Learning centers",
+      "students": "Students",
+      "groups": "Groups"
+    },
+    "pill_month": "This month",
+    "pill_students": "+140 students",
+    "pill_active_label": "Active learners",
+    "pill_active_value": "95%+"
+  },
+  "features": {
+    "badge": "Features",
+    "title": "Why EduNex?",
+    "subtitle": "Automate all processes and take your learning center to the next level",
+    "items": {
+      "students": {
+        "title": "Student Management",
+        "desc": "Each student's data, groups, attendance, and payment history in one place."
+      },
+      "payments": {
+        "title": "Payments & Reports",
+        "desc": "Auto-calculate monthly payments, track debts, generate financial reports."
+      },
+      "attendance": {
+        "title": "Attendance System",
+        "desc": "QR code or biometric attendance tracking. Automatic notifications to parents."
+      },
+      "teachers": {
+        "title": "Teachers",
+        "desc": "Schedule, lesson count, and automatic monthly salary calculation."
+      },
+      "telegram": {
+        "title": "Telegram Bot",
+        "desc": "Parents track their child's attendance, grades, and payment status via Telegram."
+      },
+      "analytics": {
+        "title": "Statistics & Analytics",
+        "desc": "Monthly, quarterly, and annual reports. Track growth in graphical view."
+      }
+    }
+  },
+  "screenshots": {
+    "label": "Platform",
+    "title": "See the Platform",
+    "subtitle": "Clean interface, fast performance, responsive on all devices",
+    "roles": {
+      "director": "Director",
+      "teacher": "Teacher"
+    },
+    "tabs": {
+      "dashboard": "Dashboard",
+      "reports": "Reports",
+      "students": "Students",
+      "teachers": "Teachers",
+      "groups": "Groups",
+      "attendance": "Attendance",
+      "payments": "Payments",
+      "salaries": "Salaries",
+      "debtors": "Debtors",
+      "settings": "Settings",
+      "overview": "Overview"
+    }
+  },
+  "pricing": {
+    "label": "Pricing",
+    "title": "Simple, transparent pricing",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "yearly_badge": "Save 20%",
+    "yearly_hint": "Save 20% with annual billing",
+    "currency": "UZS",
+    "per_month": "mo",
+    "per_year": "yr",
+    "custom_price": "Custom",
+    "custom_hint": "Individual pricing for 400+ students",
+    "popular": "Popular",
+    "cta_start": "Get started",
+    "cta_contact": "Contact us",
+    "plans": {
+      "starter": {
+        "name": "Small",
+        "students": "Up to 100 students",
+        "features": [
+          "Up to 100 students",
+          "Attendance & payments",
+          "Telegram bot",
+          "Reports",
+          "Teacher platform"
+        ]
+      },
+      "pro": {
+        "name": "Medium",
+        "students": "100–400 students",
+        "features": [
+          "Up to 400 students",
+          "All Small features",
+          "Multi-branch management",
+          "Salary calculation",
+          "Debtors module"
+        ]
+      },
+      "enterprise": {
+        "name": "Large",
+        "students": "400+ students",
+        "features": [
+          "Unlimited students",
+          "All Medium features",
+          "Custom integrations",
+          "Dedicated manager",
+          "24/7 support"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "What our clients say",
+    "subtitle": "Feedback from learning center directors",
+    "items": [
+      {
+        "name": "Bekzod Husanov",
+        "role": "Director of Ibrat Edu (Surkhandarya)",
+        "quote": "EduNex completely transformed our center. Attendance, payments, and reports are now in one place — we've cut admin time in half.",
+        "rating": 5
+      },
+      {
+        "name": "Doniyor Rajabov",
+        "role": "Director of London Education (Tashkent)",
+        "quote": "The Telegram bot made parent communication so much easier. Every payment and attendance update is now sent automatically.",
+        "rating": 5
+      },
+      {
+        "name": "Baxtiyor Yo'ldoshev",
+        "role": "Director of TechAcademy (Karakalpakstan)",
+        "quote": "There was nothing like this in our region. EduNex made management much more convenient and transparent. Highly recommended.",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Can't find an answer? Get in touch with us.",
+    "items": [
+      {
+        "q": "How long does it take to get started with EduNex?",
+        "a": "After registration, your platform will be ready within 1 day. Our team will help with the setup."
+      },
+      {
+        "q": "Is there a trial period?",
+        "a": "Yes, a 14-day free trial is available. No credit card required."
+      },
+      {
+        "q": "Is my data safe?",
+        "a": "All data is stored in encrypted form. We never share information with third parties."
+      },
+      {
+        "q": "Can I manage multiple branches?",
+        "a": "Yes, the Medium and Large plans allow you to manage multiple branches from a single account."
+      },
+      {
+        "q": "How does the Telegram bot work?",
+        "a": "The bot automatically sends parents notifications about attendance, payments, and grades. Setup takes 10 minutes."
+      },
+      {
+        "q": "Can I change my plan?",
+        "a": "Yes, you can upgrade or downgrade at any time. The difference in price will be recalculated."
+      }
+    ]
+  },
+  "cta": {
+    "form_title": "Request a demo",
+    "form_subtitle": "One form — we'll reach out within 24 hours",
+    "success_title": "Thank you!",
+    "privacy": "Your data is stored securely",
+    "label": "Get started free",
+    "title": "Try the platform",
+    "highlight": "14 days free",
+    "subtitle": "No payment or card required. Try it and judge for yourself.",
+    "firstName": "Your name",
+    "phone": "Phone number",
+    "centerName": "Learning center name",
+    "placeholder_name": "e.g. Jasur",
+    "placeholder_phone": "+998 90 123 45 67",
+    "placeholder_center": "e.g. Ibrat Edu",
+    "submit": "Request demo",
+    "submitting": "Sending...",
+    "success": "We'll get back to you within 24 hours!",
+    "error_required": "Please fill in all fields",
+    "error_server": "Something went wrong. Please try again.",
+    "error_network": "Network error. Please try again.",
+    "benefits": [
+      "14 days free — no credit card needed",
+      "All features fully unlocked",
+      "No installation — works in the browser",
+      "We reply within 24 hours"
+    ]
+  },
+  "footer": {
+    "desc": "A modern management platform for learning centers. Attendance, payments, reports — all in one place.",
+    "links_title": "Navigation",
+    "contact_title": "Contact",
+    "copyright": "© 2025 EduNex. All rights reserved.",
+    "rights": "Tashkent, Uzbekistan"
+  }
+}
