@@ -18,13 +18,10 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
 
-      {/* Main */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
-          {/* Brand */}
           <div className="lg:col-span-2">
-            {/* Logo — navbar dagi bilan bir xil */}
             <div className="mb-4">
               <img
                 src="/edunex_logo.png"
@@ -48,7 +45,6 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Nav links */}
           <div>
             <h4
               className="font-semibold text-white mb-4 text-sm"
@@ -70,7 +66,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h4
               className="font-semibold text-white mb-4 text-sm"
@@ -107,7 +102,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
       <div className="border-t border-white/8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-slate-500 text-sm">{t('copyright')}</p>
