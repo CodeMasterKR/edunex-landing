@@ -69,7 +69,6 @@ export default function CTAForm() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-          {/* Left — copy */}
           <div>
             <motion.span
               initial={{ opacity: 0, y: 12 }}
@@ -104,7 +103,6 @@ export default function CTAForm() {
               {t('subtitle')}
             </motion.p>
 
-            {/* Benefits */}
             <motion.ul
               initial={{ opacity: 0, y: 16 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -122,7 +120,6 @@ export default function CTAForm() {
             </motion.ul>
           </div>
 
-          {/* Right — form */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -145,7 +142,6 @@ export default function CTAForm() {
               ) : (
                 <div className="space-y-5">
 
-                  {/* Form header */}
                   <div>
                     <h3
                       className="text-lg font-bold text-slate-900 mb-1"
