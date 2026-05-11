@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         uz: 'https://edunex.uz/uz',
         ru: 'https://edunex.uz/ru',
         en: 'https://edunex.uz/en',
+        'x-default': 'https://edunex.uz/uz', 
       },
     },
     openGraph: {
