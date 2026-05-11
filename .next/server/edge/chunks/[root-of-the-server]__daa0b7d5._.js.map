@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/lib/i18n/routing.ts"],"sourcesContent":["import { defineRouting } from 'next-intl/routing';\r\n\r\nexport const routing = defineRouting({\r\n  locales: ['uz', 'ru', 'en'],\r\n  defaultLocale: 'uz',\r\n  localePrefix: 'as-needed', // ← shu qo'shiladi\r\n});"],"names":[],"mappings":";;;;AAAA;;AAEO,MAAM,UAAU,IAAA,0WAAa,EAAC;IACnC,SAAS;QAAC;QAAM;QAAM;KAAK;IAC3B,eAAe;IACf,cAAc;AAChB"}},
+    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.ts"],"sourcesContent":["import createMiddleware from 'next-intl/middleware';\nimport { routing } from './lib/i18n/routing';\n\nexport default createMiddleware(routing);\n\nexport const config = {\n  matcher: ['/((?!api|_next|_vercel|.*\\\\..*).*)'],\n};"],"names":[],"mappings":";;;;;;AAAA;AACA;;;uCAEe,IAAA,wTAAgB,EAAC,yIAAO;AAEhC,MAAM,SAAS;IACpB,SAAS;QAAC;KAAqC;AACjD"}}]
+}
