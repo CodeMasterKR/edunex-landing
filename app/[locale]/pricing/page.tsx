@@ -1,10 +1,16 @@
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import dynamic from 'next/dynamic';
 import Navbar from '@/components/landing/Navbar';
-import Pricing from '@/components/landing/Pricing';
+import Hero from '@/components/landing/Hero';
+import Features from '@/components/landing/Features';
+import Screenshots from '@/components/landing/Screenshots';
+import Testimonials from '@/components/landing/Testimonials';
 import FAQ from '@/components/landing/FAQ';
 import CTAForm from '@/components/landing/CTAForm';
 import Footer from '@/components/landing/Footer';
+
+const Pricing = dynamic(() => import('@/components/landing/Pricing'), { ssr: false });
 
 interface Props {
   params: Promise<{ locale: string }>;
