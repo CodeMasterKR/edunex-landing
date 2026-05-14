@@ -82,6 +82,61 @@ const jsonLd = {
   sameAs: ['https://t.me/edunexuz'],
 };
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: "EduNex bilan boshlash qancha vaqt oladi?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Ro'yxatdan o'tganingizdan so'ng 1 kun ichida platformangiz tayyor bo'ladi. Jamoamiz sozlashda yordam beradi.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Sinov muddati bormi?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Ha, 14 kunlik bepul sinov davri mavjud. Karta ma'lumotlari talab qilinmaydi.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Ma'lumotlarim xavfsizmi?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Barcha ma'lumotlar shifrlangan holda saqlanadi. Biz hech qachon uchinchi shaxslarga ma'lumot bermaymiz.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Bir nechta filial boshqarish mumkinmi?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Ha, O'rta va Katta tariflarida bir nechta filialni bitta hisobdan boshqarish mumkin.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Telegram bot qanday ishlaydi?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Bot ota-onalarga davomat, to'lov va baholar haqida avtomatik xabar yuboradi. Sozlash 10 daqiqa oladi.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Tarifni o'zgartirish mumkinmi?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Ha, istalgan vaqtda tarifni oshirish yoki kamaytirish mumkin. Farq summasi hisoblab qaytariladi.",
+      },
+    },
+  ],
+};
+
 export default async function LocaleLayout({
   children,
   params,
@@ -103,6 +158,10 @@ export default async function LocaleLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       </head>
       <body
