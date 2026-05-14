@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const LOCALES = ['uz', 'ru', 'en'] as const;
@@ -37,10 +37,10 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { href: '#features', label: t('features') },
-    { href: '#pricing', label: t('pricing') },
-    { href: '#testimonials', label: t('testimonials') },
-    { href: '#faq', label: t('faq') },
+    { href: `/${locale}/features`,      label: t('features') },
+    { href: `/${locale}/pricing`,       label: t('pricing') },
+    { href: `/${locale}/testimonials`,  label: t('testimonials') },
+    { href: `/${locale}/contact`,       label: t('faq') },
   ];
 
   return (
@@ -51,7 +51,6 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="fixed top-0 left-0 right-0 z-50"
       >
-        {/* Top border line */}
         <div className="absolute inset-x-0 top-0 h-px bg-slate-900/5" />
 
         <div
@@ -80,13 +79,13 @@ export default function Navbar() {
               {/* Desktop Nav */}
               <div className="hidden md:flex items-center gap-1">
                 {navLinks.map((link) => (
-                  <a
+                  <Link
                     key={link.href}
                     href={link.href}
                     className="px-4 py-2 rounded-lg text-sm font-medium text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition-all duration-200"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
 
@@ -117,12 +116,12 @@ export default function Navbar() {
                 </div>
 
                 {/* CTA */}
-                <a
-                  href="#cta"
+                <Link
+                  href={`/${locale}/contact`}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 text-white text-sm font-semibold hover:bg-slate-700 active:scale-[0.98] transition-all duration-200"
                 >
                   {t('demo')}
-                </a>
+                </Link>
               </div>
 
               {/* Mobile: lang + burger */}
@@ -181,7 +180,6 @@ export default function Navbar() {
       <AnimatePresence>
         {menuOpen && (
           <>
-            {/* Backdrop */}
             <motion.div
               key="backdrop"
               initial={{ opacity: 0 }}
@@ -192,7 +190,6 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
             />
 
-            {/* Drawer */}
             <motion.div
               key="drawer"
               initial={{ opacity: 0, y: -6 }}
@@ -203,38 +200,41 @@ export default function Navbar() {
             >
               <div className="rounded-2xl bg-white border border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.08)] overflow-hidden">
 
-                {/* Links */}
                 <div className="p-2">
                   {navLinks.map((link, i) => (
-                    <motion.a
+                    <motion.div
                       key={link.href}
-                      href={link.href}
-                      onClick={() => setMenuOpen(false)}
                       initial={{ opacity: 0, x: -8 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: i * 0.04, duration: 0.2 }}
-                      className="flex items-center px-4 py-3 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-all"
                     >
-                      {link.label}
-                    </motion.a>
+                      <Link
+                        href={link.href}
+                        onClick={() => setMenuOpen(false)}
+                        className="flex items-center px-4 py-3 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-all"
+                      >
+                        {link.label}
+                      </Link>
+                    </motion.div>
                   ))}
                 </div>
 
-                {/* Divider */}
                 <div className="h-px bg-slate-100 mx-4" />
 
-                {/* CTA */}
                 <div className="p-3">
-                  <motion.a
-                    href="#cta"
-                    onClick={() => setMenuOpen(false)}
+                  <motion.div
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.18, duration: 0.22 }}
-                    className="flex items-center justify-center w-full py-3 rounded-xl bg-slate-900 text-white text-sm font-semibold active:scale-[0.98] transition-transform"
                   >
-                    {t('demo')}
-                  </motion.a>
+                    <Link
+                      href={`/${locale}/contact`}
+                      onClick={() => setMenuOpen(false)}
+                      className="flex items-center justify-center w-full py-3 rounded-xl bg-slate-900 text-white text-sm font-semibold active:scale-[0.98] transition-transform"
+                    >
+                      {t('demo')}
+                    </Link>
+                  </motion.div>
                 </div>
 
               </div>

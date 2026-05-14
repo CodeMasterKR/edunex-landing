@@ -25,13 +25,10 @@ export const metadata: Metadata = {
     template: '%s | EduNex',
   },
   description: "Talabalar, to'lovlar, davomat va o'qituvchilarni bir platformada boshqaring. 14 kun bepul sinab ko'ring.",
-  keywords: ["o'quv markaz", 'lms', 'erp', 'uzbekistan', 'edunex', 'talabalar', "to'lov tizimi"],
+  keywords: ["o'quv markaz", 'lms', 'erp', 'uzbekistan', 'edunex', 'talabalar', "to'lov tizimi", 'Ibrohimov Kamron', 'Kamron Ibrohimov', 'EduNex Kamron',],
   icons: {
     icon: '/edunex_tab.png',
     apple: '/edunex_tab.png',
-  },
-  verification: {
-    google: 'Kamronbek196769*', 
   },
   openGraph: {
     title: "EduNex — O'quv Markazlar uchun Raqamli Boshqaruv",
@@ -65,6 +62,26 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'EduNex',
+  url: 'https://www.edunex.uz',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Web',
+  description: "O'quv markazlar uchun raqamli boshqaruv tizimi",
+  author: {
+    '@type': 'Person',
+    name: 'Kamron Ibrohimov',
+  },
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'UZS',
+  },
+  sameAs: ['https://t.me/edunexuz'],
+};
+
 export default async function LocaleLayout({
   children,
   params,
@@ -82,6 +99,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${plusJakarta.variable} ${inter.variable} antialiased`}
         suppressHydrationWarning
