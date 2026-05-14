@@ -22,12 +22,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `EduNex — ${t('headline')}`,
     description: t('subheadline'),
     alternates: {
-      canonical: `https://edunex.uz/${locale}`,
+      canonical: `https://www.edunex.uz/${locale}`,
       languages: {
-        uz: 'https://edunex.uz/uz',
-        ru: 'https://edunex.uz/ru',
-        en: 'https://edunex.uz/en',
-        'x-default': 'https://edunex.uz/uz', 
+        uz: 'https://www.edunex.uz/uz',
+        ru: 'https://www.edunex.uz/ru',
+        en: 'https://www.edunex.uz/en',
+        'x-default': 'https://www.edunex.uz/uz',
       },
     },
     openGraph: {
