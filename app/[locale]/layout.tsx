@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://edunex.uz'),
+  metadataBase: new URL('https://www.edunex.uz'),
   title: {
     default: "EduNex — O'quv Markazlar uchun Raqamli Boshqaruv",
     template: '%s | EduNex',
@@ -30,11 +30,14 @@ export const metadata: Metadata = {
     icon: '/edunex_tab.png',
     apple: '/edunex_tab.png',
   },
+  verification: {
+    google: 'Kamronbek196769*', 
+  },
   openGraph: {
     title: "EduNex — O'quv Markazlar uchun Raqamli Boshqaruv",
     description: "O'quv markazingizni zamonaviy texnologiyalar bilan boshqaring.",
     type: 'website',
-    url: 'https://edunex.uz',
+    url: 'https://www.edunex.uz',
     siteName: 'EduNex',
     images: [
       {

@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ['/api/', '/_next/'],
       },
     ],
-    sitemap: 'https://edunex.uz/sitemap.xml',
+    sitemap: 'https://www.edunex.uz/sitemap.xml',
   };
 }

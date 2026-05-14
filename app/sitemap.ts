@@ -1,23 +1,26 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://www.edunex.uz';
+  const lastModified = new Date();
+
   return [
     {
-      url: 'https://edunex.uz/uz',
-      lastModified: new Date('2025-01-01'),
-      changeFrequency: 'monthly',
-      priority: 1,
+      url: `${baseUrl}/uz`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 1.0,
     },
     {
-      url: 'https://edunex.uz/ru',
-      lastModified: new Date('2025-01-01'),
-      changeFrequency: 'monthly',
+      url: `${baseUrl}/ru`,
+      lastModified,
+      changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: 'https://edunex.uz/en',
-      lastModified: new Date('2025-01-01'),
-      changeFrequency: 'monthly',
+      url: `${baseUrl}/en`,
+      lastModified,
+      changeFrequency: 'weekly',
       priority: 0.8,
     },
   ];
