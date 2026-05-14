@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import Navbar from '@/components/landing/Navbar';
-import Pricing from '@/components/landing/Pricing';
+import Pricing from '@/components/landing/PricingSection';
 import FAQ from '@/components/landing/FAQ';
 import CTAForm from '@/components/landing/CTAForm';
 import Footer from '@/components/landing/Footer';
